@@ -1,7 +1,7 @@
 local startUpArgs = getgenv().startUpArgs or { 'universal', 'public' }
 
 local drawing  = loadstring(game:HttpGet('https://raw.githubusercontent.com/VertigoCool99/Library2/main/drawing.lua'))()
-local tween = loadstring(game:HttpGet('https://gist.githubusercontent.com/0f76/1661258383c3c320ac5af2c9dd923fd5/raw/ee3c79b95eafa3b732127a0a7d37a4dc43b3bd60/custom_tween.lua'))()
+local tween = loadstring(game:HttpGet('https://raw.githubusercontent.com/VertigoCool99/Library2/main/tween.lua'))()
 local services = setmetatable({}, {
     __index = function(_, k)
         k = (k == "InputService" and "UserInputService") or k
